@@ -1,0 +1,108 @@
+/* Fonts */  
+
+.tuffy-regular { 
+    font-family: "Tuffy", sans-serif; 
+    font-weight: 400; 
+    font-style: normal; 
+}  
+  
+.tuffy-bold { 
+    font-family: "Tuffy", sans-serif; 
+    font-weight: 700; 
+    font-style: normal; 
+} 
+
+.tuffy-regular-italic { 
+    font-family: "Tuffy", sans-serif; 
+    font-weight: 400; 
+    font-style: italic; 
+} 
+
+.tuffy-bold-italic { 
+    font-family: "Tuffy", sans-serif; 
+    font-weight: 700; 
+    font-style: italic;
+} 
+
+.eb-garamond-400 {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} 
+
+/* Styles */
+
+.nav-bar { 
+    background-color: aquamarine; 
+}
+
+.nav-bar > p { 
+    display: inline-block; 
+    margin: 0px; 
+    margin-left: 80px; 
+    margin-right: 60px; 
+    font-size: 40px;
+    padding: 20px 0px; 
+} 
+
+.nav-bar > a { 
+    font-size: 28px;
+    color: black;
+    margin-right: 60px;
+} 
+
+.card { 
+    border: solid;
+    border-width: medium;
+    border-color: black;  
+    border-radius: 20px;
+    margin: 60px;
+    height: 400px;
+    box-shadow: 5px 20px;
+} 
+
+.inputs { 
+    display: flex; 
+    justify-content: center; 
+}
+
+.inputs > form {
+    margin-top: 40px; 
+}
+
+.inputs input { 
+    font-size: 20px;
+    border-radius: 40px;
+    padding: 5px 20px; 
+} 
+
+.word-info > p { 
+    margin: 0px; 
+    margin-left: 40px; 
+    margin-top: 10px; 
+} 
+
+.word-info > .word { 
+    margin: 0px; 
+    margin-left: 40px; 
+    margin-top: 20px; 
+}
+
+.word-info > ul { 
+    list-style-type: circle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

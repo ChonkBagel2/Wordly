@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title> 
+
+    <link href="/styles.css" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Tuffy:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <section>
+      <div class="nav-bar tuffy-regular">
+        <p class="eb-garamond-400"> Wordly <sub> English Helper </sub> </p>
+
+        <a href="/words"> Home</a>
+        <a href="/words/random"> Random Word</a>
+      </div>
+    </section>
+
+    <section>
+      <!-- Section for main content -->
+
+      <div class="card"> 
+
+        <div class="inputs"> 
+
+          <form action="/words" method="post">
+            <input class="tuffy-regular" name="search" autocomplete="off" placeholder="Search for a word" />
+            <input class="tuffy-regular" type="submit" value="Search" />
+          </form>
+
+        </div> 
+
+        <% if ( locals.content ) { %> 
+
+          <div class="word-info"> 
+            
+            <p class="word tuffy-regular"> word: <%= locals.word %> </p> 
+
+            <% if ( locals.meanings ) { %> 
+
+              <p class="tuffy-regular"> Meanings: </p> 
+
+              <ul>
+              <% locals.meanings.forEach( function ( meaning ) { %>
+    
+              <li class="tuffy-regular"><%= meaning %></li>
+    
+              <% }); %> 
+              
+              </ul>
+
+            <% } else { %>
+
+              <p class="tuffy-regular"> Sorry, no meanings found for this word </p> 
+
+            <% } %> 
+            <% } %> 
+        </div> 
+
+      </div> 
+      
+    </section> 
+
+  </body>
+</html>
